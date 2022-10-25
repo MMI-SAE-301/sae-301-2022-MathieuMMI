@@ -17,6 +17,19 @@
     </div>
   </section>
   <section class="bg-white">
-    
+    <h2>Vos créations</h2>
+    <div class="flex gap-10 justify-center">
+      <div class="bg-yellow-400 p-32">
+        <p>ICI COMPOSANT EXEMPLE</p>
+      </div>
+      <div class="bg-yellow-400 p-32">
+        <p>ICI COMPOSANT EXEMPLE</p>
+      </div>
+    </div>
+    <h2>TikTak</h2>
+    <p>TikTak vous offre la possibilité de confectionner votre propre montre. Personnalisez les couleurs de votre écran,
+      de votre bracelet et de votre boitier comme bon vous semble !
+    </p>
+    <p>Rendez votre montre unique, parce que vous êtes uniques !</p>
   </section>
 </template>
