@@ -16,7 +16,7 @@
   <Suspense>
     <router-view />
   </Suspense>
-  <footer class="mt-36">
+  <footer>
     <div class="relative flex-grow-0 flex-shrink-0 bg-black p-10 pb-20">
       <div>
         <div class="flex">
