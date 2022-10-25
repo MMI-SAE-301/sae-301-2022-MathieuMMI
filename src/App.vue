@@ -1,6 +1,4 @@
 <script setup lang="ts">
-//<RouterLink to="/"><img class="mr-[1500px]" src="@/assets/TikTak.svg"></RouterLink>
-
 </script>
 
 <template>
