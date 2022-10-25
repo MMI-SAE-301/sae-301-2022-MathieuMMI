@@ -3,8 +3,8 @@
 
 </script>
 
-<template class="">
-  <header>
+<template>
+  <header class="bg-white pb-5">
     <nav class="relative flex-grow-0 flex-shrink-0">
       <RouterLink to="/"><img class="ml-10 mt-10" src="@/assets/TikTak.svg"></RouterLink>
       <a class="absolute right-24 top-10 font-aubrey text-xl text-gray-900">A propos</a>
@@ -16,9 +16,9 @@
     </nav>
   </header>
   <Suspense>
-    <router-view class="m-2 border-2 p-2" />
+    <router-view />
   </Suspense>
-  <Footer>
+  <footer>
     <div class="relative flex-grow-0 flex-shrink-0 bg-black p-10 pb-20">
       <div>
         <div class="flex">
@@ -38,5 +38,5 @@
         <a class="m-20 font-aubrey text-xl">Contact</a>
       </div>
     </div>
-  </Footer>
+  </footer>
 </template>
