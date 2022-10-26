@@ -7,10 +7,10 @@
       <RouterLink to="/"><img class="ml-10 mt-10" src="@/assets/TikTak.svg"></RouterLink>
       <a class="absolute right-24 top-10 font-aubrey text-xl text-gray-900">A propos</a>
       <RouterLink to="/montre/montre" class="absolute right-48 font-aubrey top-10 text-xl text-gray-900">Ma montre</RouterLink>
-      <RouterLink to="/compte" class="absolute right-5 top-10 font-aubrey text-xl text-gray-900"><img
+      <RouterLink to="/compte" class="absolute right-5 top-11"><img
           src="@/assets/compteicon.svg" alt="Logo représentant deux aiguilles avec le mot TikTak, nom de notre société">
       </RouterLink>
-      <img class="absolute right-14 top-10 text-xl text-gray-900" src="@/assets/panier.svg">
+      <img class="absolute right-14 top-11" src="@/assets/panier.svg">
     </nav>
   </header>
   <Suspense>
