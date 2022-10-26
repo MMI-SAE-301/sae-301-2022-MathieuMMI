@@ -1,18 +1,30 @@
 <script setup lang="ts">
+import TikTak from '@/components/TikTak.vue'
+import MenuIcon from '@/components/MenuIcon.vue'
+
 </script>
 
 <template>
   <header class="bg-white pb-5">
     <nav class="relative">
-      <RouterLink to="/"><img class="ml-10 mt-10" src="@/assets/TikTak.svg"></RouterLink>
-      <a class="absolute right-24 top-10 font-aubrey text-xl text-gray-900">A propos</a>
-      <RouterLink to="/montre/montre" class="absolute right-48 font-aubrey top-10 text-xl text-gray-900">Ma montre
+      <RouterLink to="/">
+        <TikTak class="ml-8 mt-8" />
       </RouterLink>
-      <RouterLink to="/compte" class="absolute right-5 top-11">
-        <img src="@/assets/compteicon.svg"
-          alt="Logo représentant deux aiguilles avec le mot TikTak, nom de notre société">
-      </RouterLink>
-      <img class="absolute right-14 top-11" src="@/assets/panier.svg">
+      <menu-icon />
+      <ul class="hidden w-[803px] xl:flex">
+        <li><a class="absolute right-24 top-10 font-aubrey text-xl text-gray-900">A propos</a></li>
+        <li>
+          <RouterLink to="/montre/montre" class="absolute right-48 font-aubrey top-10 text-xl text-gray-900">Ma montre
+          </RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/compte" class="absolute right-5 top-11">
+            <img src="@/assets/compteicon.svg"
+              alt="Icône permettant d'accéder aux données du compte">
+          </RouterLink>
+        </li>
+        <li><img class="absolute right-14 top-11" src="@/assets/panier.svg" alt="Icône permettant d'accéder au panier"></li>
+      </ul>
     </nav>
   </header>
   <Suspense>
