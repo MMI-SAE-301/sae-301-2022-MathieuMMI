@@ -3,7 +3,7 @@ import { supabase, user } from '../supabase';
 
 </script>
 <template>
-    <section class="bg-yellow-200 text-center pb-[25%]" >
+    <section class="bg-yellow-200 text-center pb-[50%]" >
         <div>
             <button class="font-aubrey text-xl bg-amber-500 rounded-[25px] m-5 mt-20" v-if="user" @pointerdown="supabase.auth.signOut()">
                 Se déconnecter ({{user.email}})
