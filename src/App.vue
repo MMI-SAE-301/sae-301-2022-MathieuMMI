@@ -6,7 +6,7 @@
     <nav class="relative flex-grow-0 flex-shrink-0">
       <RouterLink to="/"><img class="ml-10 mt-10" src="@/assets/TikTak.svg"></RouterLink>
       <a class="absolute right-24 top-10 font-aubrey text-xl text-gray-900">A propos</a>
-      <RouterLink to="/montre" class="absolute right-48 font-aubrey top-10 text-xl text-gray-900">Ma montre</RouterLink>
+      <RouterLink to="/montre/montre" class="absolute right-48 font-aubrey top-10 text-xl text-gray-900">Ma montre</RouterLink>
       <RouterLink to="/compte" class="absolute right-5 top-10 font-aubrey text-xl text-gray-900"><img
           src="@/assets/compteicon.svg" alt="Logo représentant deux aiguilles avec le mot TikTak, nom de notre société">
       </RouterLink>

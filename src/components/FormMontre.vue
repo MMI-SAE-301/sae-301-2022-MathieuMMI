@@ -18,7 +18,7 @@ async function upsertMontre(dataForm, node) {
     if (error) node.setErrors([error.message]);
     else {
         node.setErrors([]);
-        router.push({ name: "edit-id", params: { id: data[0].id } });
+        router.push({ name: "montre-edit-id", params: { id: data[0].idmontre } });
     }
 }
 
@@ -44,14 +44,14 @@ const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
 <template>
     <div class="flex justify-center gap-20">
         <MontreComp class="w-[20%]" v-bind="montre" />
-        <FormKit type="form" v-model="montre" @submit="upsertMontre">
+        <FormKit submit-label="Valider" type="form" v-model="montre" @submit="upsertMontre">
             <div class="relative mb-5 mt-32">
                 <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#b3b3b3"
                     name="ecran" label="Ecran" />
                 <div class="w-7 h-7 rounded-full border-2 border-black" :style="{ backgroundColor: montre.ecran }" />
             </div>
-            <div>
-                <div class="relative mb-5">
+            <div class="mb-5">
+                <div class="relative">
                     <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#FFFFFF"
                         name="bracelet" label="Bracelet" />
                     <div class="w-7 h-7 rounded-full border-2 border-black"

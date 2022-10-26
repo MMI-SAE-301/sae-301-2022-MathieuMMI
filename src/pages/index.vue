@@ -14,7 +14,7 @@ import Montreconnectee_illustration from '@/components/MontreComp.vue'
       <h2>à vous de personnaliser la vôtre !</h2>
       <div class="relative text-center">
         <button class="bg-amber-500 rounded-[25px] m-5">
-          <RouterLink to="./montre" class="m-1 ml-3 mr-3">PERSONNALISER</RouterLink>
+          <RouterLink to="/montre/montre" class="m-1 ml-3 mr-3">PERSONNALISER</RouterLink>
         </button>
       </div>
     </div>

@@ -5,5 +5,7 @@ defineProps<{
 }>();
 </script>
 <template>
+  <section class="bg-yellow-200 pt-52 pb-52">
   <FormMontre :id="id" />
+  </section>
 </template>
