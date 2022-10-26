@@ -35,9 +35,9 @@ import MenuIcon from '@/components/MenuIcon.vue'
       <div>
         <div class="lg:flex">
           <div class="flex mb-10 mt-3 ml-5 gap-6">
-            <img class="w-[15%]" src="../public/logo-ig-png-32464 2.png" alt="Logo d'Instagram">
-            <img class="w-[15%]" src="../public/image 4.png" alt="Logo de Twitter">
-            <img class="w-[15%]" src="../public/image 5.png" alt="Logo de LinkedIn">
+            <img class="w-[15%]" src="../public/insta.png" alt="Logo d'Instagram">
+            <img class="w-[15%]" src="../public/twi.png" alt="Logo de Twitter">
+            <img class="w-[15%]" src="../public/lin.png" alt="Logo de LinkedIn">
           </div>
           <img src="@/assets/TikTak02.svg" class="lg:absolute lg:right-10"
             alt="Logo représentant deux aiguilles avec le mot TikTak, nom de notre société avec une typographie blanche">

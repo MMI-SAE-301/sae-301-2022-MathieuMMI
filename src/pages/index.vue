@@ -6,7 +6,7 @@ import ListMontre from '@/components/ListMontre.vue'
     <div>
       <h2 class="text-xl font-aubrey text-left lg:ml-96 lg:mb-6 sm:ml-3">Ils ont créé leur propre montre,</h2>
       <figure class="flex gap-10 justify-center">
-        <img class="w-80" src="../../public/bruce-mars-8YG31Xn4dSw-unsplash 1.jpg"
+        <img class="w-80" src="../../public/cadre1.jpg"
           alt="Photographie représentant un cadre d'âge moyen souriant au téléphone">
         <figcaption class="font-belgrano text-lg mt-14 text-center">“Pouvoir personnaliser sa propre montre, <br />
           c’est sympathique.”
@@ -16,7 +16,7 @@ import ListMontre from '@/components/ListMontre.vue'
         <figcaption class="font-belgrano text-lg mt-10 text-center">“L’heure est plus agréable à lire quand on <br />
           définit soi-même sa
           montre !”</figcaption>
-        <img class="w-80" src="../../public/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash 1.jpg"
+        <img class="w-80" src="../../public/cadre2.jpg"
           alt="Photographie d'une jeune cadre prenant la pose et souriant">
       </figure>
       <h2 class="text-xl font-aubrey text-right sm:mr-3 lg:mr-96 mt-6 mb-6">à vous de personnaliser la vôtre !</h2>
