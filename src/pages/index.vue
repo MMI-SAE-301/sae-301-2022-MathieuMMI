@@ -31,7 +31,7 @@ import ListMontre from '@/components/ListMontre.vue'
   <section class="bg-white">
     <h2 class="text-xl font-aubrey sm:ml-20 lg:ml-64 mt-10">Vos créations</h2>
     <div class="gap-20 flex flex-row justify-center">
-      <ListMontre class="grid grid-cols-2 gap-36" />
+      <ListMontre class="lg:grid lg:grid-cols-2 lg:gap-36 sm:flex sm:flex-col sm:gap-20" :max="6" />
     </div>
     <h2 class="text-xl font-aubrey sm:ml-20 lg:ml-64 mt-10">TikTak</h2>
     <p class="sm:ml-24 lg:ml-72 font-open-sans text-base">TikTak vous offre la possibilité de confectionner votre propre montre. Personnalisez les couleurs de votre écran,

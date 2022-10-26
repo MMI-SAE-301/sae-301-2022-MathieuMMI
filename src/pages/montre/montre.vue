@@ -11,10 +11,10 @@ import ListMontre from '@/components/ListMontre.vue'
         <FormMontre />
     </section>
     <section class="bg-white mt-20 mb-20">
-        <h2 class="text-xl font-aubrey sm:ml-20 lg:ml-64 mt-10">Besoin d’inspiration ? Revoyez vos créations :</h2>
+        <h2 class="text-xl font-aubrey sm:ml-20 lg:ml-64 mt-10 mb-10">Besoin d’inspiration ? Revoyez vos créations :</h2>
 
         <div class="gap-20 flex flex-row justify-center">
-            <ListMontre class="grid grid-cols-2 gap-36" />
+            <ListMontre class="lg:grid lg:grid-cols-2 lg:gap-36 sm:flex sm:flex-col sm:gap-20" />
         </div>       
     </section>
 
