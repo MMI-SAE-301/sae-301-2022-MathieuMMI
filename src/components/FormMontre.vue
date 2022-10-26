@@ -37,19 +37,25 @@ if (props.id) {
     <div class="flex justify-center gap-20">
         <MontreComp class="w-[20%]" v-bind="montre" />
         <FormKit type="form" v-model="montre" @submit="upsertMontre">
-            <FormKit input-class="sr-only" type="color" value="#FFFFFF" name="bracelet" label="Bracelet">
-                <template #label="context">
-                    <label>
-                        <div class="h-6 w-6 rounded-full border-2 peer-checked:border-red-600"
-                            :style="{ backgroundColor: context.value }" />
-                        <span>
-                            {{ context.label }}
-                        </span>
-                    </label>
-                </template>
-            </FormKit>
-            <FormKit class="rounded-full" type="color" value="#b3b3b3" name="ecran" label="Ecran" />
-            <FormKit class="rounded-full" type="color" value="#FFFFFF" name="boitier" label="Boitier" />
+            <div class="relative mt-20 mb-5">
+                <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#FFFFFF"
+                    name="bracelet" label="Bracelet" />
+                <div class="w-7 h-7 rounded-full border-2 border-black" :style="{ backgroundColor: montre.bracelet }" />
+            </div>
+            <div class="relative mb-5">
+                <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#b3b3b3"
+                    name="ecran" label="Ecran" />
+                <div class="w-7 h-7 rounded-full border-2 border-black" :style="{ backgroundColor: montre.ecran }" />
+            </div>
+            <div class="relative">
+                <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#FFFFFF"
+                    name="boitier" label="Boitier" />
+                <div class="w-7 h-7 rounded-full border-2 border-black" :style="{ backgroundColor: montre.boitier }" />
+            </div>
         </FormKit>
     </div>
 </template>
+
+<style>
+
+</style>
