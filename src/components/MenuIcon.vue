@@ -16,7 +16,7 @@
         h-screen
         w-screen
         translate-x-full
-        bg-yellow-500
+        bg-yellow-200
         motion-safe:transition-transform motion-safe:duration-1000" :class="{ 'translate-x-0': menuOuvert }">
     <ul class="mt-36 flex flex-col gap-3 text-center text-3xl">
       <li class="mt-8">
