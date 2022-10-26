@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Montreconnectee_illustration from '@/components/Montreconnectee_illustration.vue'
+import Montreconnectee_illustration from '@/components/MontreComp.vue'
 </script>
 <template>
   <section class="bg-yellow-200">

@@ -143,9 +143,12 @@ withDefaults(defineProps<Montre>(), {
         transform="translate(-459.17 -45.58)" />
     </g>
     <g id="boitier">
-      <rect :fill="boitier" stroke="black" stroke-width="0.5" x="0.25" y="130.63" width="379.91" height="453.62" rx="80.8" />
-      <rect :fill="boitier" stroke="black" stroke-width="0.5" x="19.52" y="156.05" width="341.37" height="402.78" rx="72.17" />
-      <rect :fill="ecran" stroke="black" stroke-width="0.5" x="38.43" y="172.53" width="303.55" height="369.83" rx="65.21" />
+      <rect :fill="boitier" stroke="black" stroke-width="0.5" x="0.25" y="130.63" width="379.91" height="453.62"
+        rx="80.8" />
+      <rect :fill="boitier" stroke="black" stroke-width="0.5" x="19.52" y="156.05" width="341.37" height="402.78"
+        rx="72.17" />
+      <rect :fill="ecran" stroke="black" stroke-width="0.5" x="38.43" y="172.53" width="303.55" height="369.83"
+        rx="65.21" />
     </g>
     <g id="ecran">
       <text class="cls-36" transform="translate(59.96 329.78)">1O:1O</text>
