@@ -1,11 +1,11 @@
 # code de base pour TP (et future SAE 301)
 
-- **Nom :**
-- **Prénom :**
-- **URL maquette Figma:**
+- **Nom :**BOUQUE
+- **Prénom :**Mathieu
+- **URL maquette Figma:**https://www.figma.com/file/kAnlX0jlvh2UxYAeUeKKQK/sae301
 - **URL publique du site :**
-- **URL projet Supabase :**
-  - [ ] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
+- **URL projet Supabase :**https://hcylqwviubnuibrionpr.supabase.co
+  - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
 # Auto-évaluation
 
@@ -31,10 +31,10 @@ Noté sur 40.
 - Code et Commit (0-2-4-6pts)
 - Code HTML spécifiquement sémantique et accessible (0-1-2pts)
 
-- [ ] usage de Classes utilitaires (1pt)
+- [] usage de Classes utilitaires (1pt)
   - lien vers sa définition
   - lien vers son usage
-- [ ] Composants graphiques (0-1-2pts)
+- [] Composants graphiques (0-1-2pts)
   - liens
 - Technique CSS (0-1-2pts)
   - Quelles techniques (Eg. Styles graphiques (répétés) tous ajoutés par CSS et/ou
