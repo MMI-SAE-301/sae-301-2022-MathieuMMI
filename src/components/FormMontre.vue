@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import type { Montre } from '@/types'
 </script>
 
-<template>COUCOU</template>
+<template>COUCOU
+    <FormKit type="color" value="#FFFFFF" />
+</template>

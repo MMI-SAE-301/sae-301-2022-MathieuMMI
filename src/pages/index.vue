@@ -1,3 +1,6 @@
+<script setup lang="ts">
+import Montreconnectee_illustration from '@/components/Montreconnectee_illustration.vue'
+</script>
 <template>
   <section class="bg-yellow-200">
     <div>
@@ -11,19 +14,18 @@
       <h2>à vous de personnaliser la vôtre !</h2>
       <div class="relative text-center">
         <button class="bg-amber-500 rounded-[25px] m-5">
-          <p class="m-1 ml-3 mr-3">PERSONNALISER</p>
+          <RouterLink to="./montre" class="m-1 ml-3 mr-3">PERSONNALISER</RouterLink>
         </button>
       </div>
     </div>
   </section>
   <section class="bg-white">
     <h2>Vos créations</h2>
-    <div class="flex gap-10 justify-center">
-      <div class="bg-yellow-400 p-32">
-        <p>ICI COMPOSANT EXEMPLE</p>
-      </div>
-      <div class="bg-yellow-400 p-32">
-        <p>ICI COMPOSANT EXEMPLE</p>
+
+    <div class="flex justify-center">
+      <div class="flex gap-36 w-[50%]">
+        <Montreconnectee_illustration class="bg-yellow-400 p-32 pt-5 pb-5" />
+        <Montreconnectee_illustration class="bg-yellow-400 p-32 pt-5 pb-5" />
       </div>
     </div>
     <h2>TikTak</h2>
