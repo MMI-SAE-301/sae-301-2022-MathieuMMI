@@ -31,26 +31,43 @@ if (props.id) {
     else montre.value = (data as any[])[0];
 }
 
+const { data: listeMateriaux } = await supabase
+    .from("materiaux")
+    .select("*");
+
+const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
+    value: materiaux.idmateriaux,
+    label: materiaux.libelle,
+}));
 </script>
 
 <template>
     <div class="flex justify-center gap-20">
         <MontreComp class="w-[20%]" v-bind="montre" />
         <FormKit type="form" v-model="montre" @submit="upsertMontre">
-            <div class="relative mt-20 mb-5">
-                <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#FFFFFF"
-                    name="bracelet" label="Bracelet" />
-                <div class="w-7 h-7 rounded-full border-2 border-black" :style="{ backgroundColor: montre.bracelet }" />
-            </div>
-            <div class="relative mb-5">
+            <div class="relative mb-5 mt-32">
                 <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#b3b3b3"
                     name="ecran" label="Ecran" />
                 <div class="w-7 h-7 rounded-full border-2 border-black" :style="{ backgroundColor: montre.ecran }" />
             </div>
-            <div class="relative">
-                <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#FFFFFF"
-                    name="boitier" label="Boitier" />
-                <div class="w-7 h-7 rounded-full border-2 border-black" :style="{ backgroundColor: montre.boitier }" />
+            <div>
+                <div class="relative mb-5">
+                    <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#FFFFFF"
+                        name="bracelet" label="Bracelet" />
+                    <div class="w-7 h-7 rounded-full border-2 border-black"
+                        :style="{ backgroundColor: montre.bracelet }" />
+                </div>
+                <FormKit type="select" name="idmateriel_bracelet" label="Type de matériel" :options="optionsMateriaux" />
+            </div>
+
+            <div>
+                <div class="relative">
+                    <FormKit label-class="pl-10 absolute inset-0" input-class="sr-only" type="color" value="#FFFFFF"
+                        name="boitier" label="Boitier" />
+                    <div class="w-7 h-7 rounded-full border-2 border-black"
+                        :style="{ backgroundColor: montre.boitier }" />
+                </div>
+                <FormKit type="select" name="idmateriel_boitier" label="Type de matériel" :options="optionsMateriaux" />
             </div>
         </FormKit>
     </div>
