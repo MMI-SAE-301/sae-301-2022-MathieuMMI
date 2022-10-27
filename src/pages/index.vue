@@ -2,7 +2,8 @@
 import ListMontre from '@/components/ListMontre.vue'
 </script>
 <template>
-  <section class="bg-yellow-200">
+  <section class="bg-yellow-200 dark:bg-slate-700 dark:text-gray-100">
+    <span class="sr-only">Retrouvez ici deux clients satisfaits de leur achat</span>
     <div>
       <h2 class="text-xl font-aubrey text-left lg:ml-96 lg:mb-6 sm:ml-3">Ils ont créé leur propre montre,</h2>
       <figure class="flex gap-10 justify-center">
@@ -21,22 +22,27 @@ import ListMontre from '@/components/ListMontre.vue'
       </figure>
       <h2 class="text-xl font-aubrey text-right sm:mr-3 lg:mr-96 mt-6 mb-6">à vous de personnaliser la vôtre !</h2>
       <div class="relative text-center">
-        <button class="bg-amber-500 rounded-[25px] m-5">
+        <button class="text-xl font-aubrey bg-amber-500 dark:bg-gray-900 rounded-[25px] m-5">
           <RouterLink to="/montre/montre" class="m-1 ml-3 mr-3 text-white text-xl font-aubrey">PERSONNALISER MA MONTRE
           </RouterLink>
         </button>
       </div>
     </div>
   </section>
-  <section class="bg-white">
+  <section class="dark:text-gray-900">
+    <span class="sr-only">Ici sont regroupées 6 de vos anciennes créations sur notre site</span>
     <h2 class="text-xl font-aubrey sm:ml-20 lg:ml-64 mt-10">Vos créations</h2>
     <div class="gap-20 flex flex-row justify-center">
       <ListMontre class="lg:grid lg:grid-cols-2 lg:gap-36 sm:flex sm:flex-col sm:gap-20" :max="6" />
     </div>
     <h2 class="text-xl font-aubrey sm:ml-20 lg:ml-64 mt-10">TikTak</h2>
-    <p class="sm:ml-24 lg:ml-72 font-open-sans text-base">TikTak vous offre la possibilité de confectionner votre propre montre. Personnalisez les couleurs de votre écran,
+    <p class="sm:ml-24 lg:ml-72 font-open-sans text-base">TikTak vous offre la possibilité de confectionner votre
+      propre
+      montre. Personnalisez les couleurs de votre écran,
       de votre bracelet et de votre boitier comme bon vous semble !
     </p>
-    <p class="sm:ml-24 lg:ml-72 font-open-sans text-base mb-20">Rendez votre montre unique, parce que vous êtes uniques !</p>
+    <p class="sm:ml-24 lg:ml-72 font-open-sans text-base">Rendez votre montre unique, parce que vous êtes
+      uniques
+      !</p>
   </section>
 </template>
