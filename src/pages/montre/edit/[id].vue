@@ -4,8 +4,11 @@ defineProps<{
   id: string;
 }>();
 </script>
+
 <template>
-  <section class="bg-yellow-200 pt-52 pb-52">
-  <FormMontre :id="id" />
-  </section>
+  <main class="-mb-20">
+    <section class="bg-yellow-200 pt-52 pb-52">
+      <FormMontre :id="id" />
+    </section>
+  </main>
 </template>
