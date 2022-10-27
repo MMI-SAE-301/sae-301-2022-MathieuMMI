@@ -42,7 +42,7 @@ import MenuIcon from '@/components/MenuIcon.vue'
       </ul>
     </nav>
   </header>
-  <main class="dark:bg-gray-300 mb-20 bg-slate-600">
+  <main class="dark:bg-gray-300 mb-20">
     <Suspense>
       <router-view />
     </Suspense>

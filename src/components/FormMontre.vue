@@ -88,6 +88,8 @@ async function supprimerMontre() {
                         :style="{ backgroundColor: montre.boitier }" />
                 </div>
                 <FormKit type="select" name="idmateriel_boitier" label="Type de matériel" :options="optionsMateriaux" />
+                <FormKit type="checkbox" name="commande" label="Commander" value="false" />
+                <FormKit type="checkbox" name="afficher" label="Afficher sur le site" value="false" />
             </div>
             <button type="button" v-if="montre.idmontre" @click="($refs.dialogSupprimer as any).showModal()"
                 class="focus-style justify-self-end rounded-md bg-red-500 p-2 shadow-sm">
