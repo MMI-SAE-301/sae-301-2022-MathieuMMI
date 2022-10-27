@@ -39,6 +39,34 @@ const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
     value: materiaux.idmateriaux,
     label: materiaux.libelle,
 }));
+
+const montreObject = ref({});
+if (props.id) {
+    let { data, error } = await supabase
+        .from("montre")
+        .select("*")
+        .eq("idmontre", props.id);
+    if (error || !data)
+        console.log("n'a pas pu charger les montres :", error);
+    else montreObject.value = data[0];
+}
+
+async function supprimerMontre() {
+    const { data, error } = await supabase
+        .from("montre")
+        .delete()
+        .match({ idmontre: montreObject.value.idmontre });
+    if (error) {
+        console.error(
+            "Erreur à la suppression de ",
+            montreObject.value,
+            "erreur :",
+            error
+        );
+    } else {
+        router.push("/montre/montre");
+    }
+}
 </script>
 
 <template>
@@ -57,7 +85,8 @@ const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
                     <div class="w-7 h-7 rounded-full border-2 border-black"
                         :style="{ backgroundColor: montre.bracelet }" />
                 </div>
-                <FormKit type="select" name="idmateriel_bracelet" label="Type de matériel" :options="optionsMateriaux" />
+                <FormKit type="select" name="idmateriel_bracelet" label="Type de matériel"
+                    :options="optionsMateriaux" />
             </div>
 
             <div>
@@ -69,6 +98,17 @@ const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
                 </div>
                 <FormKit type="select" name="idmateriel_boitier" label="Type de matériel" :options="optionsMateriaux" />
             </div>
+            <button type="button" v-if="montreObject.idmontre" @click="($refs.dialogSupprimer as any).showModal()"
+                class="focus-style justify-self-end rounded-md bg-red-500 p-2 shadow-sm">
+                Supprimer l'offre
+            </button>
+            <dialog ref="dialogSupprimer" @click="($event.currentTarget as any).close()">
+                <button type="button" class="focus-style justify-self-end rounded-md bg-blue-300 p-2 shadow-sm">
+                    Annuler</button><button type="button" @click="supprimerMontre()"
+                    class="focus-style rounded-md bg-red-500 p-2 shadow-sm">
+                    Confirmer suppression
+                </button>
+            </dialog>
         </FormKit>
     </div>
 </template>
