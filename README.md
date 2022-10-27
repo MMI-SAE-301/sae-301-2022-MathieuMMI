@@ -4,6 +4,7 @@
 - **Prénom :**Mathieu
 - **URL maquette Figma:**https://www.figma.com/file/kAnlX0jlvh2UxYAeUeKKQK/sae301
 - **URL publique du site :**http://tiktak.bouque.fr/compte
+- **URL publique heroku :**https://tiktakbouque4.herokuapp.com/
 - **URL projet Supabase :**https://hcylqwviubnuibrionpr.supabase.co
   - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
