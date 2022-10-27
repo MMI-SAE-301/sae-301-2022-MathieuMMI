@@ -42,7 +42,6 @@ import ListMontre from '@/components/ListMontre.vue'
       de votre bracelet et de votre boitier comme bon vous semble !
     </p>
     <p class="sm:ml-24 lg:ml-72 font-open-sans text-base">Rendez votre montre unique, parce que vous êtes
-      uniques
-      !</p>
+      uniques !</p>
   </section>
 </template>
