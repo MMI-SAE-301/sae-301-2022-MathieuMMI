@@ -69,16 +69,47 @@ Création du component
 (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/7fc7eb24a28bcf90fff403954298c91148abb626#diff-f5554bd67aad7761c95ff6e73cd4fdc20f2c613ba50dfb3c433b7366dfe14e00/src/components/FormMontre.vue)
 (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/7fc7eb24a28bcf90fff403954298c91148abb626#diff-f5554bd67aad7761c95ff6e73cd4fdc20f2c613ba50dfb3c433b7366dfe14e00/src/components/Montreconnectee_illustration.vue)
 (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/5f0cf9cdad9b1d7bd450a9ecaa3fb6337fb2e461#diff-cbc8144b6961a179a8964e2d33feb3d97d84679730215b4b94403aad86853cfa/src/components/ListMontre.vue)
-(https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/583ea38f6e3da726af8d8265b5882c277eaf43a9#diff-209b0fa26a98008d007824905235a170cec13837418348520da19379ce85dcc1/src/components/MobileLogo.vue)
 (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/10ddc17b1a72b4c3d1455a0143a456dd67664e11#diff-c9218a5ad2771c310e223e1598b8fe4bacf215ca0abe55a20bd285952e65c26d/src/components/MenuIcon.vue)
 
 Dernière version
+(https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/a77ca7363c536cd4b17285b89f7608a8f2aef700#diff-f5554bd67aad7761c95ff6e73cd4fdc20f2c613ba50dfb3c433b7366dfe14e00/src/components/FormMontre.vue)
+(https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/1a3609975a25d176ad88b89e6b66af57673c72f9#diff-cbc8144b6961a179a8964e2d33feb3d97d84679730215b4b94403aad86853cfa/src/components/ListMontre.vue)
+(https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/10ddc17b1a72b4c3d1455a0143a456dd67664e11#diff-c9218a5ad2771c310e223e1598b8fe4bacf215ca0abe55a20bd285952e65c26d/src/components/MenuIcon.vue)
 
 - Technique CSS (0-1-2pts)
   - Quelles techniques (Eg. Styles graphiques (répétés) tous ajoutés par CSS et/ou
     config. Tailwind (eg. before/after avec content, background...))
-    - ...
+    - bg-color text-color
   - liens
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/843077d0393c7a652845d33b88ab83e7169672f4/src/App.vue#L22)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/fe7a3e23dab0afb2c109a99c1d71d092d24bf913/src/App.vue#L7)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/fe7a3e23dab0afb2c109a99c1d71d092d24bf913/src/pages/index.vue#L2)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/fe7a3e23dab0afb2c109a99c1d71d092d24bf913/src/src/pages/index.vue#L13)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/fe7a3e23dab0afb2c109a99c1d71d092d24bf913/src/src/pages/index.vue#L19)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/d5260402657b0a6540c20c0e0fda6cd93d2f719e/src/pages/index.vue#L22)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/d5260402657b0a6540c20c0e0fda6cd93d2f719e/src/pages/index.vue#L25)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/7fc7eb24a28bcf90fff403954298c91148abb626/src/pages/montre.vue#L6)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/7fc7eb24a28bcf90fff403954298c91148abb626/src/pages/montre.vue#L12)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/7fc7eb24a28bcf90fff403954298c91148abb626/src/pages/montre.vue#L15)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/7fc7eb24a28bcf90fff403954298c91148abb626/src/pages/montre.vue#L18)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/7fc7eb24a28bcf90fff403954298c91148abb626/src/pages/montre.vue#L23)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/7fc7eb24a28bcf90fff403954298c91148abb626/src/pages/montre.vue#L26)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/88b0b0f2f9e4624c4a3746578619e03b3bc3db75/src/pages/compte.vue#L6)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/88b0b0f2f9e4624c4a3746578619e03b3bc3db75/src/pages/compte.vue#L8)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/88b0b0f2f9e4624c4a3746578619e03b3bc3db75/src/pages/compte.vue#L11)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/88b0b0f2f9e4624c4a3746578619e03b3bc3db75/src/pages/compte.vue#L16)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/88b0b0f2f9e4624c4a3746578619e03b3bc3db75/src/pages/compte.vue#L19)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/c64ba45015384c0b27bfb367ff9baffc36d3b95a:src/pages/index.vue#L27)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/c64ba45015384c0b27bfb367ff9baffc36d3b95a:src/pages/index.vue#L28)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/5f0cf9cdad9b1d7bd450a9ecaa3fb6337fb2e461/src/pages/montre/edit/[id].vue#L8)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/5f0cf9cdad9b1d7bd450a9ecaa3fb6337fb2e461/src/pages/montre/montre.vue#L7)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/5f0cf9cdad9b1d7bd450a9ecaa3fb6337fb2e461/src/pages/montre/montre.vue#L13)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/ea90c48cdd51a8d9a678cbe15d53db34810f519f/src/components/MenuIcon.vue#L19)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/097c5fcf4b4f04f73790078018a116b307f103d4/src/components/FormMontre.vue#L102)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/097c5fcf4b4f04f73790078018a116b307f103d4/src/components/FormMontre.vue#L107)
+  (https://github.com/MMI-SAE-301/sae-301-2022-MathieuMMI/commit/097c5fcf4b4f04f73790078018a116b307f103d4/src/components/FormMontre.vue#L108)
+
+
 - Mise en page CSS (0-1-2pts)
   - Quelles techniques (Grilles Flex...)
     - tout ce qui est relatif à flex, usage de positions relatives et absolues pour placer certains éléments
