@@ -40,26 +40,16 @@ const optionsMateriaux = listeMateriaux?.map((materiaux) => ({
     label: materiaux.libelle,
 }));
 
-const montreObject = ref({});
-if (props.id) {
-    let { data, error } = await supabase
-        .from("montre")
-        .select("*")
-        .eq("idmontre", props.id);
-    if (error || !data)
-        console.log("n'a pas pu charger les montres :", error);
-    else montreObject.value = data[0];
-}
 
 async function supprimerMontre() {
     const { data, error } = await supabase
         .from("montre")
         .delete()
-        .match({ idmontre: montreObject.value.idmontre });
+        .match({ idmontre: montre.value.idmontre });
     if (error) {
         console.error(
             "Erreur à la suppression de ",
-            montreObject.value,
+            montre.value,
             "erreur :",
             error
         );
@@ -98,7 +88,7 @@ async function supprimerMontre() {
                 </div>
                 <FormKit type="select" name="idmateriel_boitier" label="Type de matériel" :options="optionsMateriaux" />
             </div>
-            <button type="button" v-if="montreObject.idmontre" @click="($refs.dialogSupprimer as any).showModal()"
+            <button type="button" v-if="montre.idmontre" @click="($refs.dialogSupprimer as any).showModal()"
                 class="focus-style justify-self-end rounded-md bg-red-500 p-2 shadow-sm">
                 Supprimer l'offre
             </button>
